@@ -21,29 +21,45 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiJ-Pv-ruL">
-                                <rect key="frame" x="105.5" y="694" width="203" height="51"/>
-                                <color key="backgroundColor" red="0.74173939499999997" green="0.313721904" blue="0.33895936300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hfc-rJ-bqa">
+                                <rect key="frame" x="97" y="647" width="220" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiJ-Pv-ruL">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="51"/>
+                                        <color key="backgroundColor" red="0.74173939499999997" green="0.313721904" blue="0.33895936300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Show Text">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4w-PN-Pha"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHJ-T7-lce">
+                                        <rect key="frame" x="0.0" y="67" width="220" height="51"/>
+                                        <color key="backgroundColor" red="0.74173939499999997" green="0.313721904" blue="0.33895936300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Do something">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfk-ty-h7b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="203" id="o9Y-FB-EMK"/>
+                                    <constraint firstAttribute="width" constant="220" id="pX8-oH-8KU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Show Text">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4w-PN-Pha"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.34417766129999999" green="0.56064564189999999" blue="0.69528492210000004" alpha="0.82991805929999996" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JiJ-Pv-ruL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6W8-Io-MW2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hfc-rJ-bqa" secondAttribute="bottom" constant="97" id="F6e-1m-4Rb"/>
                             <constraint firstItem="lLM-9i-mhC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="161" id="ii6-To-m0o"/>
+                            <constraint firstItem="Hfc-rJ-bqa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nxM-6P-9gI"/>
                             <constraint firstItem="lLM-9i-mhC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="o0q-UO-rWR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lLM-9i-mhC" secondAttribute="trailing" constant="58" id="qcI-At-TPX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JiJ-Pv-ruL" secondAttribute="bottom" constant="117" id="sa9-0W-Xes"/>
                         </constraints>
                     </view>
                     <connections>
